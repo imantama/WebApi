@@ -1,0 +1,33 @@
+﻿@model WebApplication1.Models.Division
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+
+    <div class="form-horizontal">
+        <h4>Division</h4>
+        <hr/>
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.name)
+            </dt>
+            <dd>
+                @Html.DisplayNameFor(Model => Model.name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.Department)
+            </dt>
+            <dd>
+                @Html.DisplayNameFor(Model => Model.Department_Id)
+            </dd>
+        </dl>
+}
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
